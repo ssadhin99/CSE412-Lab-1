@@ -29,3 +29,26 @@ for num in numbers:
 print("Numbers:", numbers)
 print("Sum of even numbers:", sum_even)
 print("Sum of odd numbers:", sum_odd)
+
+
+
+Q: Write a python program to find the smallest number from a set of numbers.
+
+numbers = []
+
+# number of elements as input
+n = int(input("Enter number of elements: "))
+
+# iterating to take input of each number
+for i in range(n):
+    ele = int(input())
+    numbers.append(ele)
+
+# find the smallest number
+smallest = numbers[0]
+for num in numbers:
+    if num < smallest:
+        smallest = num
+
+# display the result
+print("The smallest number is:", smallest)
